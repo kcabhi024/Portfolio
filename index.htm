@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- icon-cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- javascript link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Header Start -->
+    <div class="container-fluid">
+      <div class="row bg-dark text-white">
+        <div class="col-12 col-md-3 fs-3 fw-bold">
+          <a class="navbar-brand" href="#">Navbar</a>
+        </div>
+        <div class="col-12 col-md-6 py-3">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-warning text-white" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        <div class="col-12 col-md-3 d-flex justfy-content-evenly fs-3 py-3">
+          <a href="./login.htm"><i class="bi bi-box-arrow-in-left px-3 text-danger"></i
+          ></a>
+          <a href="./login.htm"><i class="bi bi-person-plus px-3 text-warning"></i> </a>
+          <a href="#"> <i class="bi bi-cart px-3 text-info"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- <ul>
+      <li> <a href=""></a>Home</li>
+      <li> <a href="./product.htm"></a>Products</li>
+      <li> <a href="./services.htm"></a>services</li>
+      <li> <a href="./blogs.htm"></a>blogs</li>
+      <li> <a href="./contact.htm"></a>Contact</li>
+    </ul> -->
+
+    <!-- header-end -->
+
+    <!-- main start -->
+    <!-- crasoul start -->
+    <div class="container">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./curasol1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./curasol2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./curasol3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./curasol4.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h6>4th  slide label</h6>
+              <p> </p>
+        </div>
+          </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+        
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  <!-- carousal end -->
+   <!-- card start -->
+   <div class="card-group">
+    <div class="card">
+      <img src="./card1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./card2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./card3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- card end  -->
+    <!-- main end -->
+
+    <!-- footer start -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap" />
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >&copy; 2024 Company, Inc</span
+          >
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#">
+              <i class="bi bi instagram"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#">
+              <i class="bi bi facebook"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#">
+              <i class="bi bi twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- footer end -->
+  </body>
+</html>
